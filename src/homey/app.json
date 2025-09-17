@@ -1,0 +1,15 @@
+{
+  "id": "com.optimaser.homey.peak",
+  "name": {
+    "en": "Optimaser Peak & Price Orchestrator"
+  },
+  "version": "0.1.0",
+  "compatibility": {
+    "app": {
+      "homey": ">=3.0.0"
+    }
+  },
+  "description": {
+    "en": "Orchestrates devices for peak shaving and price optimization."
+  }
+}

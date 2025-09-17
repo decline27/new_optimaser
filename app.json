@@ -1,0 +1,26 @@
+{
+  "id": "com.optimaser.homey.peak",
+  "name": {
+    "en": "Optimaser Peak & Price Orchestrator"
+  },
+  "version": "0.1.0",
+  "author": "",
+  "compatibility": ">=3.0.0",
+  "description": {
+    "en": "Orchestrates devices for peak shaving and price optimization."
+  },
+  "main": "app.js",
+  "icon": "assets/icon.svg"
+  ,
+  "drivers": [
+    {
+      "id": "orchestrator",
+      "name": {
+        "en": "Orchestrator Virtual Device"
+      },
+      "class": "other",
+  "src": "drivers/orchestrator/driver.js",
+  "capabilities": []
+    }
+  ]
+}

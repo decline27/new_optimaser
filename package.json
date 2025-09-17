@@ -1,0 +1,28 @@
+{
+  "name": "optimaser-homey-peak",
+  "version": "0.1.0",
+  "description": "Homey Peak & Price Orchestrator",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "homey",
+    "orchestrator",
+    "energy",
+    "peak",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.4.2",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "homey": "^3.0.0"
+  }
+}

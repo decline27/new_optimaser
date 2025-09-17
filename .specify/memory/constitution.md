@@ -1,43 +1,54 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+## Optimaser Constitution: Non-Negotiable Principles
 
-## Core Principles
+### Purpose
+- Local, safe, explainable orchestration to reduce energy cost and peaks
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Tech Stack
+- TypeScript only
+- Homey SDK 3.0
+- All orchestration must run locally
+- External calls allowed only for prices/flex; must be cached
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Architecture Rules
+- Strict adapters (prices/meters/devices) under `lib/core/adapters`
+- Engine isolation
+- Peak overrides shift, not shed
+- Hysteresis and min on/off enforced
+- Release control logic
+- Deterministic logs
+- Defined offline behavior
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Safety & Comfort
+- Enforce min on/off times and comfort bands
+- Conservative defaults
+- Visible Paused mode
+- Never exceed device limits
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Data & Privacy
+- Minimal local storage
+- No PII stored
+- Data export only via explicit user action
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Quality Bar
+- ≥80% test coverage for core
+- Lint/format checks in CI
+- Docs for setup and safety
+- Adapter capability matrix maintained
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### UX
+- Single orchestrator device
+- Clear status: power vs limit, next cheap window, active interventions
+- Flow cards for user actions
+- Visible errors and degraded modes
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Localization
+- English first
+- Structure for Swedish/Norwegian later
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
+### Versioning & Releases
+- Semantic versioning (semver)
+- Migration notes for breaking changes
+- User-visible notice on updates
 <!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
 
 ## Governance

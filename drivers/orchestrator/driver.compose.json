@@ -1,0 +1,9 @@
+{
+  "id": "orchestrator",
+  "name": {
+    "en": "Orchestrator Virtual Device"
+  },
+  "class": "other",
+  "capabilities": [],
+  "settings": []
+}
